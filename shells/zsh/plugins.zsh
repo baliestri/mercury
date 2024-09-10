@@ -33,8 +33,7 @@ zi light-mode for z-shell/z-a-meta-plugins \
 @annexes @console-tools @fuzzy @zsh-users+fast @developer @z-shell
 
 __zi_turbo "0a" for \
-OMZL::git.zsh OMZL::git.zsh \
-OMZL::functions.zsh
+OMZL::git.zsh OMZL::functions.zsh
 
 __zi_turbo "0b" for \
 OMZL::clipboard.zsh OMZL::termsupport.zsh \
@@ -47,10 +46,7 @@ OMZP::systemd OMZP::aliases \
 OMZP::asdf OMZP::yarn
 
 __zi_completion
-zi snippet OMZP::docker/_docker
-
-__zi_completion has"fd"
-zi snippet OMZP::fd/_fd
+zi snippet OMZP::docker/completions/_docker
 
 __zi_turbo "1b" for \
 akarzim/zsh-docker-aliases alexdesousa/hab \
