@@ -1,0 +1,148 @@
+# Copyright (c) Bruno Sales <me@baliestri.dev>. Licensed under the MIT License.
+# See the LICENSE file in the project root for full license information.
+
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+format = """
+$username\
+$hostname\
+$localip\
+$shlvl\
+$singularity\
+$kubernetes\
+$directory\
+$vcsh\
+$fossil_branch\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$hg_branch\
+$pijul_channel\
+$docker_context\
+$package\
+$c\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$fennel\
+$golang\
+$guix_shell\
+$haskell\
+$haxe\
+$helm\
+$java\
+$julia\
+$kotlin\
+$gradle\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$opa\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$solidity\
+$swift\
+$terraform\
+$vlang\
+$vagrant\
+$zig\
+$buf\
+$nix_shell\
+$conda\
+$meson\
+$spack\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$env_var\
+$crystal\
+$custom\
+$sudo\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$os\
+$container\
+$shell\
+$character"""
+
+right_format = """
+$cmd_duration"""
+
+palette = "unnamed"
+
+[palettes.unnamed]
+dark_green = "#00781D"
+dark_red = "#780018"
+dark_blue = "#006978"
+
+[directory]
+style = "bold dark_green"
+read_only_style = "bold dark_red"
+read_only = " "
+home_symbol = "~"
+truncate_to_repo = true
+truncation_length = 3
+
+[package]
+symbol = " "
+style = "bold dark_blue"
+
+[dotnet]
+symbol = ".NET "
+format = "via [$symbol($version)]($style)"
+version_format = "${major}.${minor}"
+
+[docker_context]
+symbol = " "
+
+[azure]
+symbol = " "
+
+[aws]
+symbol = "󰸏 "
+
+[cmd_duration]
+format = "[$duration]($style)"
+
+[golang]
+symbol = " "
+
+[java]
+symbol = " "
+
+[kotlin]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[php]
+symbol = " "
+
+[terraform]
+symbol = "󱁢 "
+format = "via [$symbol$version]($style)"
