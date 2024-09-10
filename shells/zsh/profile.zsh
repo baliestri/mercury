@@ -53,16 +53,16 @@ fi
 typeset -gU cdpath fpath mailpath path
 
 path=(
-/home/baliestri/.dotnet/tools
-/home/baliestri/.local/share/pnpm
-/home/baliestri/.local/bin
-/home/baliestri/.local/sbin
+$HOME/.dotnet/tools
+$HOME/.local/share/pnpm
+$HOME/.local/bin
+$HOME/.local/sbin
 $path
 )
 
 fpath=(
 /usr/local/share/zsh-completions
-/home/baliestri/.zi/bin/lib
+$HOME/.zi/bin/lib
 ${0:a:h}/completers
 $fpath
 )

@@ -30,7 +30,7 @@ __zi_turbo() { zi depth"3" lucid ${1/#[0-9][a-d]/wait"${1}"} "${@:2}" }
 ## Plugins ##
 
 zi light-mode for z-shell/z-a-meta-plugins \
-@annexes @console-tools @fuzzy @zsh-users+fast @developer @z-shell
+@annexes @console-tools @zsh-users+fast @z-shell
 
 __zi_turbo "0a" for \
 OMZL::git.zsh OMZL::functions.zsh
