@@ -49,11 +49,8 @@ __zi_completion
 zi snippet OMZP::docker/completions/_docker
 
 __zi_turbo "1b" for \
-akarzim/zsh-docker-aliases alexdesousa/hab \
-nekofar/zsh-git-flow-avh \
+akarzim/zsh-docker-aliases alexdesousa/hab nekofar/zsh-git-flow-avh \
 pick"autopair.zsh" hlissner/zsh-autopair \
-voronkovich/gitignore.plugin.zsh birdhackor/zsh-exa-ls-plugin \
-jessarcher/zsh-artisan ariaieboy/laravel-sail \
 atload"export ZSH_PLUGINS_ALIAS_TIPS_TEXT=\"💡\"" djui/alias-tips
 
 __zi_completion pick"/dev/null" multisrc"src/go src/zsh"
@@ -63,6 +60,12 @@ __zi_program pick"$ZPFX/bin/git-*" src"etc/git-extras-completion.zsh" make"PREFI
 zi light tj/git-extras
 
 zi snippet "${0:a:h}/snippets/gnupg-as-ssh.zsh"
+
+zi ice from'gh-r' as'program' sbin'**/eza -> eza' atclone'cp -vf completions/eza.zsh _eza'
+zi light eza-community/eza
+
+zi ice wait lucid has'eza' atinit'AUTOCD=1'
+zi light z-shell/zsh-eza
 
 zi ice as"command" from"gh-r" \
 atclone"./starship init zsh > init.zsh; ./starship completions zsh > _starship" \
